@@ -1,0 +1,31 @@
+﻿<UserControl
+    x:Class="hexMenu.hexagon"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:hexMenu"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DesignHeight="300"
+    d:DesignWidth="400">
+    
+    <Grid Tapped="hub_Tapped">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="99*"/>
+        </Grid.RowDefinitions>
+        <Path x:Name="hub" HorizontalAlignment="Center" Height="106.87" Stroke="Black" UseLayoutRounding="False" VerticalAlignment="Center" Width="122.728" Data="M67.2772,0.5 L71.4836,0.5 L209.244,0.5 L213.451,0.5 L256.13,78.8018 L280.228,121.438 L280.08,121.71 L280.228,121.963 L280.075,122.227 L280.228,122.49 L280.08,122.743 L280.228,123.015 L256.128,165.654 L213.451,243.953 L211.873,243.953 L209.244,243.953 L71.4836,243.953 L68.8546,243.953 L67.2772,243.953 L24.6151,165.681 L0.500008,123.015 L0.648115,122.743 L0.500004,122.49 L0.653192,122.227 L0.500013,121.963 L0.648115,121.71 L0.5,121.438 L24.6153,78.7716 z" Margin="138.636,93.815,138.636,96.565" RenderTransformOrigin="0.5,0.5" Stretch="Fill"  Grid.Row="1">
+            <Path.Fill>
+                <ImageBrush ImageSource="Assets/marmoset.jpg" Stretch="Fill" Opacity="0.5"/>
+            </Path.Fill>
+            <Path.RenderTransform>
+                <CompositeTransform ScaleX="-1" ScaleY="-1" Rotation="180"/>
+            </Path.RenderTransform>
+            
+                    
+            
+        </Path>
+        <TextBlock x:Name="label" HorizontalAlignment="Center" Margin="0" Grid.Row="1" TextWrapping="Wrap" Text="hub label" VerticalAlignment="Center" FontSize="15" FontFamily="Courier New" FontWeight="SemiBold" />
+
+    </Grid>
+</UserControl>
